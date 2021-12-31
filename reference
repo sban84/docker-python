@@ -1,0 +1,15 @@
+cd <a_dir>
+python3 -m venv virtual_env_name
+source virtual_env_name/bin/activate
+pip install pyspark
+pip install requests
+pip3 freeze > requirements.txt ( check pipreqs )
+deactivate
+
+pip install requirements.txt  # Pip install to requirements.txt
+
+
+# in terminal
+docker build -t python-docker .
+
+https://docs.docker.com/language/python/build-images/
